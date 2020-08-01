@@ -49,7 +49,7 @@ class Song
         # if there isn't another duplicate, then artist_count[artist] will evaluate to nil and set up that key/value pair
         # and so on and so forth
         artist_count[artist] += 1
-      else # assigns key/value pair {artist => 1}
+      else # assigns key/value pair {artist => 1 (first time around; increments by 1 for duplicates)}
         artist_count[artist] = 1
       end
     end
