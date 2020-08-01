@@ -44,7 +44,7 @@ class Song
     artist_count = {}
     @@artists.each do |artist|
       binding.pry
-      if artist_count[artist] # first time around, evaluates to nil, so skips to else 
+      if artist_count[artist] # first time around, evaluates to nil, so skips to else
         artist_count[artist] += 1
       else # assigns key/value pair {genre => 1}
         artist_count[artist] = 1
