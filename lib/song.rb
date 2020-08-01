@@ -46,7 +46,7 @@ class Song
       binding.pry
       if artist_count[artist] # first time around, evaluates to nil, so skips to else
         artist_count[artist] += 1
-      else # assigns key/value pair {genre => 1}
+      else # assigns key/value pair {artist => 1}
         artist_count[artist] = 1
       end
     end
